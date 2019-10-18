@@ -23,19 +23,19 @@ func (h *HgwGw) ServeHTTP(rw http.ResponseWriter, r *http.Request) {
 
 var (
 	version = "0.1"
-/*	serName = kingpin.Flag("ser-name", "SerName: gateway listen addr").Default("gateway-1").String()
-	addr = kingpin.Flag("addr", "Addr: gateway listen addr").Default(":80").String()
+	serName = kingpin.Flag("ser-name", "SerName: gateway listen addr").Default("streamNet").String()
+	addr = kingpin.Flag("addr", "Addr: gateway listen addr").Default("0.0.0.0:80").String()
 	tlsAddr = kingpin.Flag("tls-addr", "Tls-Addr: gateway tls listen addr").Default(":443").String()
 	etcd = kingpin.Flag("etcd", "Addr: etcd server addr").Default("127.0.0.1:2379").String()
 	username = kingpin.Flag("u", "Username: etcd username").Default("").String()
-	password = kingpin.Flag("p", "Password: etcd password").Default("").String()*/
-
-	serName = kingpin.Flag("ser-name", "SerName: gateway listen addr").Required().String()
-	addr = kingpin.Flag("addr", "Addr: gateway listen addr").Required().String()
-	tlsAddr = kingpin.Flag("tls-addr", "Tls-Addr: gateway tls listen addr").Default("").String()
-	etcd = kingpin.Flag("etcd", "Addr: etcd server addr").Required().String()
-	username = kingpin.Flag("u", "Username: etcd username").Default("").String()
 	password = kingpin.Flag("p", "Password: etcd password").Default("").String()
+
+	//serName = kingpin.Flag("ser-name", "SerName: gateway listen addr").Required().String()
+	//addr = kingpin.Flag("addr", "Addr: gateway listen addr").Required().String()
+	//tlsAddr = kingpin.Flag("tls-addr", "Tls-Addr: gateway tls listen addr").Default("").String()
+	//etcd = kingpin.Flag("etcd", "Addr: etcd server addr").Required().String()
+	//username = kingpin.Flag("u", "Username: etcd username").Default("").String()
+	//password = kingpin.Flag("p", "Password: etcd password").Default("").String()
 )
 
 func main() {
