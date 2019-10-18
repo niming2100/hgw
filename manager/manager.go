@@ -8,10 +8,10 @@ import (
 )
 
 var (
-/*	addr = kingpin.Flag("addr", "Addr: gateway listen addr").Default("127.0.0.1:8080").String()
-	etcd = kingpin.Flag("etcd", "Addr: etcd server addr").Default("127.0.0.1:2379").String()
-	username = kingpin.Flag("u", "Username: etcd username").Default("").String()
-	password = kingpin.Flag("p", "Password: etcd password").Default("").String()*/
+	//addr = kingpin.Flag("addr", "Addr: gateway listen addr").Default("0.0.0.0:7000").String()
+	//etcd = kingpin.Flag("etcd", "Addr: etcd server addr").Default("127.0.0.1:2379").String()
+	//username = kingpin.Flag("u", "Username: etcd username").Default("").String()
+	//password = kingpin.Flag("p", "Password: etcd password").Default("").String()
 	addr = kingpin.Flag("addr", "gateway listen addr").Required().String()
 	etcd = kingpin.Flag("etcd", "etcd server addr").Required().String()
 	username = kingpin.Flag("u", "Username: etcd username").Default("").String()
